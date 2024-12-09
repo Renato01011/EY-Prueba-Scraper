@@ -33,7 +33,7 @@ def internal_error(error):
 
 @app.route('/offshore', methods=['POST'])
 @cross_origin()
-#@jwt_required()
+@jwt_required()
 def get_offshore_leaks():
 
     # Get Data from Url
@@ -107,7 +107,7 @@ def get_offshore_leaks():
 
 @app.route('/world', methods=['POST'])
 @cross_origin()
-#@jwt_required()
+@jwt_required()
 def get_world_bank():
 
     # Get Data from Url
@@ -180,7 +180,7 @@ def get_world_bank():
 
 @app.route('/sanctions', methods=['POST'])
 @cross_origin()
-#@jwt_required()
+@jwt_required()
 def get_sanctions_list():
 
     # Get Data from Url
